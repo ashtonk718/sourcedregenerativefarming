@@ -1,0 +1,389 @@
+
+*{
+    font-family: "Instrument Serif", serif;
+
+}
+
+
+.maincontent{
+margin-top: 50px;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+
+
+
+/*Navigation*/
+.hero{
+
+    text-align: center;
+}
+
+.toplogo{
+
+width: 250px;
+
+}
+
+
+
+
+.nav{
+
+    text-align: center;
+margin-top: 30px;
+}
+
+
+.navbutton{
+
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Home Page-------------------------------------------------------------------------------------------------------------------*/
+
+
+/* First Section */
+#whatregenerativefarming {
+    display: flex;
+    align-items: center; /* Aligns content vertically */
+    gap: 20px; /* Adds space between text and image */
+    margin-top: 30px;
+}
+
+/* Text Container */
+#whatregenerativefarmingtext {
+    flex: 1; /* Allows text section to take up remaining space */
+}
+
+/* Image Styling */
+#whatregenerativefarming img {
+    width: 50%; /* Adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px; /* Adds rounded corners for a softer look */
+}
+
+/* ---- MOBILE RESPONSIVE DESIGN ---- */
+@media (max-width: 768px) {
+    #whatregenerativefarming {
+        flex-direction: column; /* Stack elements */
+        text-align: center; /* Center text for better readability */
+    }
+
+    #whatregenerativefarming img {
+        width: 100%; /* Full width on mobile */
+        max-width: 400px; /* Prevents excessive stretching */
+        margin-top: 15px; /* Adds space between text and image */
+    }
+
+    #whatregenerativefarmingtext h1 {
+        font-size: 28px; /* Reduce title size for better mobile display */
+    }
+
+    #whatregenerativefarmingtext p {
+        font-size: 16px; /* Slightly smaller text for readability */
+        line-height: 1.5;
+    }
+}
+
+
+  /*Mission*/
+
+  #mission{
+
+margin-top: 70px;
+margin-bottom: 70px;
+
+
+  }
+
+
+  /*resource section*/
+
+
+
+  #resources{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+        gap: 20px;
+        
+       
+  }
+  
+
+
+  .resroucesarticle{
+
+    width: 300px;
+    border: 0px solid grey;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    background-color: #f9f8f6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+
+
+
+  .resroucesarticle img{
+
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+  }
+
+
+
+
+  /* Hover Effects */
+  .resroucesarticle:hover {
+    transform: scale(1.05); /* Slightly increases size */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Adds a soft shadow */
+  }
+  
+  /* Cool Extra Effects */
+  .resroucesarticle:hover h1 {
+    color: #b49e5b; /* Changes text color on hover */
+    transition: color 0.3s ease;
+  }
+  
+  .resroucesarticle:hover img {
+    transition: transform 0.3s ease;
+  }
+  
+
+  /*Resoruces Articles----------------------------------------------------------------------------------------------------------------*/
+
+
+  .article {
+    display: flex;
+    align-items: center;
+    background-color: #f9f8f6;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    gap: 20px;
+    max-width: 1300px; /* Keeps content width controlled on larger screens */
+  }
+  
+  /* Image Styling */
+  .article img {
+    width: 250px; /* Slightly larger for visibility */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  /* Text Container */
+  .article-content {
+    flex: 1;
+  }
+  
+  /* Title Styling */
+  .article-content h1 {
+    font-size: 36px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph Styling */
+  .article-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ---- MOBILE RESPONSIVE DESIGN ---- */
+  @media (max-width: 768px) {
+    .article {
+      flex-direction: column; /* Stack image and text */
+      text-align: center; /* Center align text */
+      padding: 15px;
+    }
+  
+    .article img {
+      width: 100%; /* Full width for mobile */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 350px; /* Prevent image from being too large */
+      margin-bottom: 15px; /* Space between image and text */
+    }
+  
+    .article-content h1 {
+      font-size: 28px; /* Reduce title size for smaller screens */
+    }
+  
+    .article-content p {
+      font-size: 14px; /* Smaller text for better readability */
+    }
+  }
+  
+  
+
+  /*Find a Farm----------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+#findafarmcontent{
+
+text-align: center;
+
+}
+
+
+
+#farmingoutput {
+    display: flex; /* Enables flexbox */
+    flex-wrap: wrap; /* Ensures cards wrap properly on smaller screens */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 20px; /* Adds space between cards */
+}
+
+
+
+
+  .farm-card {
+    background-color: #f9f8f6;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 500px; /* Optional: Set a max width for the card */
+    font-family: Arial, sans-serif; /* Optional: Set a font */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 20px;
+
+  }
+
+  .farm-card h2 {
+    background-color: #b49e5b;
+    color: #ffffff;
+    margin: 0;
+    padding: 16px;
+    font-size: 1.5em;
+    text-align: center;
+
+  }
+
+  .farm-card p {
+    margin: 0;
+    padding: 12px 16px;
+    border-top: 1px solid #e0e0e0; /* Optional: Add a separator between sections */
+  }
+
+  .farm-card a {
+    color: #333; /* Optional: Style the links */
+    text-decoration: none;
+  }
+
+  .farm-card a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+  /*admin----------------------------------------------------------------------------------------------------------------*/
+
+  #addfarmerscontainer {
+    margin-top: 30px;
+    max-width: 400px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #addfarmerscontainer label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  #addfarmerscontainer input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  #addfarmerscontainer input:focus {
+    border-color: #b49e5b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  #addfarmerscontainer button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #b49e5b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #addfarmerscontainer button:hover {
+    background: #b49e5b;
+  }
+  
+
+
+
+
+
+
+
+  /*Footer------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+  footer {
+    background-color: #f9f8f6; /* Light off-white background */
+    color: #4a4a4a; /* Dark gray text */
+    text-align: center;
+    padding: 30px 0;
+    font-family: "Merriweather", serif; /* Classic serif font */
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+    letter-spacing: 1.5px;
+  }
+  
+  footer::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #b49e5b; /* Gold accent */
+    margin: 10px auto;
+  }
+  
